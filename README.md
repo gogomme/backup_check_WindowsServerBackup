@@ -18,8 +18,7 @@ The monitoring solution determines whether the task is correct or in error accor
 
 The scripts work with the "Get-WBJob" command in the "windowsserverbackup" module that display Windows Backup information, the "Get-WBJob -Previous 1" display the last Backup job.
 
-Official documentation for "GET-WBJob":
-https://learn.microsoft.com/en-us/powershell/module/windowsserverbackup/get-wbjob?view=windowsserver2022-ps
+[Official documentation for "GET-WBJob"](https://learn.microsoft.com/en-us/powershell/module/windowsserverbackup/get-wbjob?view=windowsserver2022-ps)
 
 The selected objected for verification is "Hresult, ErrorDescription, JobState,StartTime and EndTime"
 
@@ -34,3 +33,5 @@ There are 3 possible scenarios:
 - Hresult is 0 and JobState is unknow, the last job can't be determined. The return code is 1 for "Error".
 - Hresult is not 0 and JobState is Completed, the last job finished with errors. The return code is 1 for "Error".
 - Hresult is 0 and JobState is Completed, the last job finished correctly. no return code.
+
+
